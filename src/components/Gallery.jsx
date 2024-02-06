@@ -5,11 +5,11 @@ import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 function Gallery() {
   return (
     <div>
-      <button id="left">
+      <button id="left" onClick={() => console.log("left Click")}>
         <FontAwesomeIcon icon={faArrowLeft} />
       </button>
 
-      <button id="right">
+      <button id="right" onClick={() => console.log("right Click")}>
         <FontAwesomeIcon icon={faArrowRight} />
       </button>
     </div>
